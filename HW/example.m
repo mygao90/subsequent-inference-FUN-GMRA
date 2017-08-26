@@ -30,11 +30,13 @@ for k =1:J
    % maxdif(k)= max(abs(powersub-powerGMRA));
 end
 
+poweriso = csvread('isorrr.csv');
 
-plot(thetaAseq,powerGMRA(:,5),'b--o', thetaAseq, powersub,'r')
-print('twolines','-dpng')
+plot(thetaAseq,powerGMRA(:,5),'b--o', thetaAseq, powersub,'k', thetaAseq, poweriso, 'r--d')
+print('3lines','-dpng')
 
 plot(thetaAseq,powerGMRA(:,5).'-powersub)
 print('diff','-dpng')
+
 
 
