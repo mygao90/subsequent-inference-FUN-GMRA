@@ -3,7 +3,7 @@ GMRAopts.ManifoldDimension = d;
 GMRAopts.smallestMetisNet =10;
 % whether to use best approximations
 GMRAopts.addTangentialCorrections = true;
-GMRAopts.errorType = 'relative';
+GMRAopts.errorType = 'relative'; 
 
 GMRAopts.Predictor ='none';
 GMRAopts.coeffs_threshold = 1e-10;
